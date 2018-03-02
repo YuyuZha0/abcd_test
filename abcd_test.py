@@ -150,7 +150,7 @@ def hypo_generator(size):
     hypo = [None] * size
     for i in xrange(num):
         for j in range(size):
-            hypo[j] = ['A', 'B', 'C', 'D'][(i >> (j * 2)) & 3]
+            hypo[j] = ['A', 'B', 'C', 'D'][(i >> (j << 1)) & 3]
         yield hypo
 
 

@@ -89,11 +89,11 @@ def p7(ans, hypo):
     x = ord(hypo[0])
     if ans == 'A':
         return abs(x - ord(hypo[6])) != 1
-    if ans == 'A':
+    if ans == 'B':
         return abs(x - ord(hypo[4])) != 1
-    if ans == 'A':
+    if ans == 'C':
         return abs(x - ord(hypo[1])) != 1
-    if ans == 'A':
+    if ans == 'D':
         return abs(x - ord(hypo[9])) != 1
     return None
 

@@ -144,9 +144,7 @@ def test_hypo(problem_list, hypo):
 
 
 def hypo_generator(size):
-    num = 1
-    for x in range(size):
-        num *= 4
+    num = 4 ** size
     hypo = [None] * size
     for i in xrange(num):
         for j in range(size):

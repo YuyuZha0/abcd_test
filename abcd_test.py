@@ -1,3 +1,21 @@
+"""
+### Explanation
+
+1. **Imports and Type Definitions**:
+   - `itertools.product` is used to generate all possible combinations of answers.
+   - `Literal` and `Tuple` from `typing` are used for type hinting.
+
+2. **Predicate Functions**:
+   - Functions `p0` to `p9` represent the conditions for each question in the logic puzzle. Each function takes a `choice` (the answer for that question) and a `hypo` (a tuple representing a hypothesis of answers for all questions) and returns whether the choice satisfies the condition for that question.
+
+3. **Testing Hypotheses**:
+   - `test_hypo` function iterates over all questions and checks if the given hypothesis satisfies all conditions.
+
+4. **Main Function**:
+   - `main` function generates all possible combinations of answers using `product('ABCD', repeat=10)` and tests each combination using `test_hypo`. If a combination satisfies all conditions, it prints the answers.
+
+"""
+
 from itertools import product
 from typing import Literal, Tuple
 
